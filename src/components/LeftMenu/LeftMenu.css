@@ -1,0 +1,99 @@
+.left-menu {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background-color: rgb(41, 41, 41);
+  border-right: 2px solid rgba(255, 255, 255, 0.377);
+  color: white;
+  transition: all 0.5s ease;
+  z-index: 999;
+}
+
+.user-info {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  height: 70px;
+  background-color: rgb(41, 41, 41);
+  font-size: 15px;
+  padding-left: 50px;
+}
+.user-info img {
+  width: 35px;
+  border-radius: 50px;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0 10px 50px;
+}
+.menu-list li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.menu-list li:hover {
+  color: var(--main-color);
+}
+
+.home-icon {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.button-left_menu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 18px;
+  width: 30px;
+  height: 20px;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background: transparent;
+  font-size: 50px;
+}
+
+.left-menu_close {
+  transition: all 0.5s ease;
+  transform: translate(-300px);
+}
+.button-left_menu_close {
+  transition: all 0.5s ease;
+  right: -30px;
+  transform: rotateY(180deg);
+  color: rgb(255, 253, 253);
+}
+
+.button-out {
+  position: absolute;
+  bottom: 50px;
+}
+.button-out button {
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  font-size: 20px;
+  border: 3px solid rgb(255, 255, 255);
+  color: rgb(252, 252, 252);
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+.button-out button:hover {
+  transition: all 0.5s ease;
+  transform: translateY(-10px);
+}
